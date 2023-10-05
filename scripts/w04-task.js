@@ -6,25 +6,26 @@ let myProfile = {
     name: "Yolanda Lizano",
     photo: "images/photo_yoly.jpg",
     favoriteFoods: [
-        "pizza", 
-        "pasta", 
-        "seco de carne"
+        "French Fries", 
+        "Pizza", 
+        "Seco de carne",
+        "Burguers"
     ],
     hobbies: [
-        "reading", 
-        "walk", 
-        "travel", 
-        "watch movies"
+        "Reading", 
+        "Walking", 
+        "Handcrafts", 
+        "Watch movies"
     ],
     placesLived : [] 
 };
 
 /* Populate Profile Object with placesLive objects */
 
-myProfile.placesLived.push({place: "Quito", length: "33 years"});
-myProfile.placesLived.push({place: "Guayaquil", length: "1 year"});
-myProfile.placesLived.push({place: "Houston", length: "1 year and a half"});
-myProfile.placesLived.push({place: "Tulsa", length: "2 years and a half"}); 
+myProfile.placesLived.push({place: "Quito - Ecuador", length: "33 years"});
+myProfile.placesLived.push({place: "Guayaquil - Ecuador", length: "1 year"});
+myProfile.placesLived.push({place: "Houston - Texas", length: "1 year and a half"});
+myProfile.placesLived.push({place: "Tulsa - Oklahoma", length: "2 years and a half"}); 
 
 
 /* DOM Manipulation - Output */
