@@ -1,7 +1,7 @@
 /* Universal Selector */
 * {
-    margin: 20;
-    padding: 10;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -134,7 +134,7 @@ footer {
     display: block;
 }
 
-* ID Selectors */
+/* ID Selectors */
 ​
 #home {
     margin-top: 125px;
@@ -166,7 +166,7 @@ footer {
 #sortBy {
     appearance: none;
     display: flex;
-    padding: 5rem;
+    padding: .5rem;
     background-color: #eee;
     color: #444;
     font-weight: 700;
@@ -186,14 +186,14 @@ footer {
 #temples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 5rem;
+    grid-gap: .5rem;
     align-items: center;
     margin-bottom: 3rem;
 }
 ​
 #temples article {
     height: 250px;
-    margin: 5rem;
+    margin: .5rem;
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
     background-color: #eee;
@@ -213,14 +213,14 @@ footer {
     width: 250px;
     height: auto;
     box-shadow: 0 0 30px #777;
-    margin: .5rem;
+    margin: 5rem;
 }
 ​
 /* Media Queries */
-@media only screen and (min-width: 40.5em) {
+@media only screen and (min-width: 32.5em) {
     nav ul {
         flex-direction: row;
-    };
+    }
 ​
     nav ul li:first-child {
         display: none;
@@ -237,7 +237,7 @@ footer {
     #home {
         margin: 100px auto 20px;
         grid-template-columns: 250px 1fr;
-        max-width: -moz-fit-content;
+        max-width: fit-content;
         max-width: fit-content;
     }
 ​
