@@ -1,4 +1,5 @@
-[
+{
+  "recipes": [
     {
       "name": "Grilled Chicken Salad",
       "ingredients": ["chicken breast", "lettuce", "tomatoes", "cucumbers", "olive oil", "lemon", "salt", "pepper"],
