@@ -1,64 +1,51 @@
-// Fetching external data
-const fetchData = async () => {
-    try {
-        const response = await fetch('https://yolylopezlizano.github.io/cse121b/Receipes_menu.json');
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching data: ', error);
+document.addEventListener('DOMContentLoaded', function () {
+    const select = document.getElementById('ingredients');
+    const recipesList = document.getElementById('recipes');
+
+    fetch('https://yolylopezlizano.github.io/cse121b/Receipes_menu.json')
+        .then(response => response.json())
+        .then(data => {
+            const ingredients = getIngredients(data);
+
+            showIngredients(ingredients);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+
+    function getIngredients(data) {
+        const ingredients = new Set();
+        data.recipes.forEach(recipe => {
+            recipe.ingredients.forEach(ingredient => {
+                ingredients.add(ingredient);
+            });
+        });
+        return Array.from(ingredients);
     }
-};
 
-// Filtering recipes based on available ingredients
-const filterRecipes = (recipes, availableIngredients) => {
-    return recipes.filter(recipe =>
-        recipe.ingredients.some(ingredient =>
-            availableIngredients.includes(ingredient)
-        )
-    );
-};
-
-// Displaying recipes
-const displayRecipes = (recipes) => {
-    const suggestedRecipesDiv = document.getElementById('suggestedRecipes');
-    suggestedRecipesDiv.innerHTML = '';
-
-    if (recipes.length === 0) {
-        suggestedRecipesDiv.innerHTML = 'No recipes found with the given ingredients.';
-    } else {
-        recipes.forEach(recipe => {
-            const recipeDiv = document.createElement('div');
-            recipeDiv.classList.add('recipe');
-
-            const ingredients = recipe.ingredients.join(', ');
-
-            const recipeHTML = `
-                <h2>${recipe.name}</h2>
-                <h3>Ingredients:</h3>
-                <p>${ingredients}</p>
-                <h3>Cooking Instructions:</h3>
-                <p>${recipe.instructions}</p>
-            `;
-
-            recipeDiv.innerHTML = recipeHTML;
-            suggestedRecipesDiv.appendChild(recipeDiv);
+    function showIngredients(ingredients) {
+        ingredients.forEach(ingredient => {
+            const option = document.createElement('option');
+            option.text = ingredient;
+            select.add(option);
         });
     }
-};
+});
 
-// Main function
-const main = async () => {
-    const data = await fetchData();
-    const form = document.getElementById('ingredientForm');
+function showRecipes() {
+    const select = document.getElementById('ingredients');
+    const selection = select.value;
+    const recipesList = document.getElementById('recipes');
 
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const input = document.getElementById('ingredients').value.toLowerCase();
-        const availableIngredients = input.split(',').map(ingredient => ingredient.trim());
-
-        const filteredRecipes = filterRecipes(data.recipes, availableIngredients);
-        displayRecipes(filteredRecipes);
-    });
-};
-
-main();
+    fetch('https://yolylopezlizano.github.io/cse121b/Receipes_menu.json')
+        .then(response => response.json())
+        .then(data => {
+            recipesList.innerHTML = '';
+            data.recipes.forEach(recipe => {
+                if (recipe.ingredients.includes(selection)) {
+                    const item = document.createElement('li');
+                    item.textContent = `${recipe.name}: ${recipe.ingredients.join(', ')}: ${recipe.instructions}`;
+                    recipesList.appendChild(item);
+                }
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+}

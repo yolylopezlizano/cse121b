@@ -1,14 +1,66 @@
 /* Universal Selector */
 * {
     margin: 0;
-    padding: 100;
-    box-sizing: content-box;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+#suggestedRecipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.recipe {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 60%;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin: 5px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* HTML Selectors */
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
-   
 }
 
 nav {
@@ -64,22 +116,25 @@ nav ul li a:hover {
 h1,
 h2 {
     text-align: center;
-    margin: 1rem 0 .5rem;
-}
-
-h1 {
-    border-bottom: 1px solid #ccc;
+    margin: 1rem 0 2rem;
 }
 
 #gridly h1 {
-    margin-top: 80px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: navy;
+    text-align: center;
+    margin-top: 100px;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: navy;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 h3 {
@@ -150,7 +205,7 @@ dt {
 }
 
 dt::before {
-    content: "ðŸ˜ï¸ ";
+    content: "🏘️ ";
 }
 
 dd {
@@ -209,14 +264,12 @@ footer {
     justify-content: center;
 }
 
-
 #section1 {
     background-color: rgb(225, 250, 225, .5);
 }
 
 #section2 {
     background-color: rgba(200, 200, 250, 0.5);
-
 }
 
 #section2 div {
@@ -245,39 +298,6 @@ footer {
     padding: 1rem;
     background-color: #111;
     color: #eee;
-}
-
-#temples {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: .5rem;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-#temples article {
-    height: 250px;
-    margin: .5rem;
-    border: 1px solid rgba(0, 0, 0, .1);
-    padding: 1rem;
-    background-color: #eee;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#temples h4 {
-    color: navy;
-    font-size: smaller;
-}
-
-
-#temples img {
-    width: 250px;
-    height: auto;
-    box-shadow: 0 0 30px #777;
-    margin: .5rem;
 }
 
 /* Media Queries */
@@ -312,6 +332,4 @@ footer {
         margin: 0 auto;
         max-width: 950px;
     }
-    
-   
 }
