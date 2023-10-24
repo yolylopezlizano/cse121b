@@ -1,5 +1,4 @@
-{
-  "recipes": [
+[
     {
       "name": "Grilled Chicken Salad",
       "ingredients": ["chicken breast", "lettuce", "tomatoes", "cucumbers", "olive oil", "lemon", "salt", "pepper"],
@@ -51,4 +50,3 @@
       "instructions": "1. Combine all ingredients in a blender. 2. Blend until smooth. 3. Adjust sweetness with honey if desired. Serve immediately."
     }
   ]
-}

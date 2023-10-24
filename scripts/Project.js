@@ -1,7 +1,7 @@
 // Fetching external data
 const fetchData = async () => {
     try {
-        const response = await fetch('URL_OF_YOUR_JSON_DATA');
+        const response = await fetch('https://yolylopezlizano.github.io/cse121b/Receipes_menu.json');
         const data = await response.json();
         return data;
     } catch (error) {
