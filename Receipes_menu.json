@@ -1,0 +1,54 @@
+{
+  "recipes": [
+    {
+      "name": "Grilled Chicken Salad",
+      "ingredients": ["chicken breast", "lettuce", "tomatoes", "cucumbers", "olive oil", "lemon", "salt", "pepper"],
+      "instructions": "1. Grill chicken breast until cooked. 2. Chop lettuce, tomatoes, and cucumbers. 3. Slice the grilled chicken. 4. Toss all ingredients together with olive oil, lemon juice, salt, and pepper. Serve immediately."
+    },
+    {
+      "name": "Vegetable Stir-Fry",
+      "ingredients": ["broccoli", "carrots", "bell peppers", "onion", "garlic", "soy sauce", "sesame oil", "rice"],
+      "instructions": "1. Chop all vegetables into bite-sized pieces. 2. Heat sesame oil in a pan, add minced garlic and onion. 3. Stir-fry all vegetables until tender. 4. Add soy sauce and continue cooking for another minute. 5. Serve with cooked rice."
+    },
+    {
+      "name": "Beef Tacos",
+      "ingredients": ["ground beef", "taco seasoning", "tortillas", "lettuce", "tomatoes", "cheese", "sour cream"],
+      "instructions": "1. Brown ground beef in a pan, add taco seasoning and water. 2. Heat tortillas in a separate pan. 3. Assemble tacos with beef, lettuce, tomatoes, cheese, and sour cream. Serve warm."
+    },
+    {
+      "name": "Pesto Pasta",
+      "ingredients": ["pasta", "basil", "pine nuts", "garlic", "olive oil", "parmesan cheese", "salt", "pepper"],
+      "instructions": "1. Cook pasta according to package instructions. 2. Blend basil, pine nuts, garlic, and olive oil to make pesto. 3. Toss cooked pasta with the pesto. 4. Add parmesan cheese, salt, and pepper to taste. Serve warm."
+    },
+    {
+      "name": "Salmon with Roasted Vegetables",
+      "ingredients": ["salmon fillet", "zucchini", "bell peppers", "red onion", "lemon", "olive oil", "dill", "salt", "pepper"],
+      "instructions": "1. Preheat oven to 400°F. 2. Place salmon on a baking sheet, surround with chopped vegetables. 3. Drizzle with olive oil, sprinkle with dill, salt, and pepper. 4. Roast for 15-20 minutes until the salmon is cooked through. Serve with lemon wedges."
+    },
+    {
+      "name": "Mushroom Risotto",
+      "ingredients": ["arborio rice", "mushrooms", "onion", "garlic", "white wine", "vegetable broth", "butter", "parmesan cheese"],
+      "instructions": "1. Sauté mushrooms, onions, and garlic in butter. 2. Add arborio rice, stir until translucent. 3. Pour in white wine, let it absorb. 4. Gradually add vegetable broth, stirring frequently, until rice is cooked. 5. Stir in parmesan cheese. Serve hot."
+    },
+    {
+      "name": "Classic Cheeseburger",
+      "ingredients": ["ground beef", "hamburger buns", "lettuce", "tomato", "onion", "cheese", "ketchup", "mustard"],
+      "instructions": "1. Form ground beef into patties and grill to desired doneness. 2. Toast hamburger buns. 3. Assemble burgers with lettuce, tomato, onion, cheese, ketchup, and mustard. Serve hot."
+    },
+    {
+      "name": "Veggie Pizza",
+      "ingredients": ["pizza dough", "tomato sauce", "bell peppers", "mushrooms", "onion", "olives", "mozzarella cheese", "basil"],
+      "instructions": "1. Preheat oven to 450°F. 2. Roll out pizza dough and spread tomato sauce. 3. Top with sliced bell peppers, mushrooms, onion, and olives. 4. Sprinkle mozzarella cheese on top. 5. Bake for 15-20 minutes or until the crust is golden and the cheese is melted. Garnish with fresh basil."
+    },
+    {
+      "name": "Chocolate Chip Cookies",
+      "ingredients": ["butter", "sugar", "brown sugar", "eggs", "vanilla extract", "flour", "baking soda", "salt", "chocolate chips"],
+      "instructions": "1. Preheat oven to 375°F. 2. Cream butter, sugar, and brown sugar. 3. Beat in eggs and vanilla. 4. In a separate bowl, mix flour, baking soda, and salt. 5. Combine wet and dry ingredients, then fold in chocolate chips. 6. Drop tablespoons of dough onto a baking sheet. 7. Bake for 10-12 minutes or until golden brown."
+    },
+    {
+      "name": "Fruit Smoothie",
+      "ingredients": ["banana", "strawberries", "blueberries", "yogurt", "milk", "honey"],
+      "instructions": "1. Combine all ingredients in a blender. 2. Blend until smooth. 3. Adjust sweetness with honey if desired. Serve immediately."
+    }
+  ]
+}
